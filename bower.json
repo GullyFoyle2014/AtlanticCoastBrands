@@ -1,0 +1,15 @@
+{
+  "name": "AtlanticCoastBrands",
+  "authors": [
+    "Alex Morse <alex.m2004@gmail.com>"
+  ],
+  "description": "Coding test",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "Coding",
+    "Test"
+  ],
+  "license": "MIT",
+  "homepage": ""
+}
