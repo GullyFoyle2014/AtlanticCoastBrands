@@ -1,5 +1,7 @@
 /*Atlantic Coast Brands Test SASS-CSS*/
 /* webfonts */
+#mfPreviewBar { display: none !important;}
+/*hides myfonts.com preview bar for the test*/
 /*
 font-family: 'Bodoni Book';
 font-family: 'Bodoni Bold';
@@ -32,12 +34,20 @@ font-family:'MyriadProRegular';
        url('/fonts/myriadpro-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('/fonts/myriadpro-regular-webfont.svg#webfontOtLQ4vAf') format('svg'); /* Legacy iOS */
 }
+
+/* Variables */
 $colorWhite: #fff;
+
+/* globals */
+
+
+/* Structure */
 body {
 	background: #f00;
 
 	h1 {
 		color: $colorWhite;
+		font-family: 'MyriadProRegular',serif;
 	}
 }
 
