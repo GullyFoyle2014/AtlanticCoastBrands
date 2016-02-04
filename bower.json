@@ -11,5 +11,8 @@
     "Test"
   ],
   "license": "MIT",
-  "homepage": ""
+  "homepage": "",
+  "devDependencies": {
+    "jquery": "^2.2.0"
+  }
 }

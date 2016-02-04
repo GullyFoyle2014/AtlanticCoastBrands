@@ -1,0 +1,43 @@
+/*Atlantic Coast Brands Test SASS-CSS*/
+/* webfonts */
+/*
+font-family: 'Bodoni Book';
+font-family: 'Bodoni Bold';
+font-family: 'Bodoni';
+font-family:'MyriadProSemibold';
+font-family:'MyriadProLight';
+font-family:'MyriadProRegular';
+*/
+@font-face {
+  font-family: 'MyriadProSemibold';
+  src: url('/fonts/myriadpro-semibold_opentype-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/myriadpro-semibold_opentype-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/myriadpro-semibold_opentype-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/myriadpro-semibold_opentype-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/myriadpro-semibold_opentype-webfont.svg#MyriadProSemibold') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'MyriadProLight';
+  src: url('/fonts/myriadpro-light-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/myriadpro-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/myriadpro-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/myriadpro-light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/myriadpro-light-webfont.svg#MyriadProLight') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'MyriadProRegular';
+  src: url('/fonts/myriadpro-regular-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/myriadpro-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/myriadpro-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/myriadpro-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/myriadpro-regular-webfont.svg#webfontOtLQ4vAf') format('svg'); /* Legacy iOS */
+}
+$colorWhite: #fff;
+body {
+	background: #f00;
+
+	h1 {
+		color: $colorWhite;
+	}
+}
+
