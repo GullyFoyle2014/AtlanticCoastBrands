@@ -9,6 +9,7 @@ font-family: 'Bodoni';
 font-family:'MyriadProSemibold';
 font-family:'MyriadProLight';
 font-family:'MyriadProRegular';
+font-family: 'Bodoni Condensed'; (ttf only)
 */
 @font-face {
   font-family: 'MyriadProSemibold';
@@ -34,55 +35,76 @@ font-family:'MyriadProRegular';
        url('/fonts/myriadpro-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('/fonts/myriadpro-regular-webfont.svg#webfontOtLQ4vAf') format('svg'); /* Legacy iOS */
 }
+@font-face {
+	font-family: 'Bodoni Condensed';
+	src: url('/fonts/BOD_CR.ttf') format('truetype');
+	/* Test Note: This is the only source file available, may not render in old IE or OperaMini */
+}
 
 /* Variables */
 $colorWhite: #fff;
 $colorBlack: #000;
-$mainColWidth: 1085px;
+$mainColwidth: 1085px;
 
 /* globals */
 
 
 /* Structure */
-html {
-		background: $colorWhite url('/images/bg_main_top_icons.png') no-repeat top center; 
-	
-		.wrapper {
-			width: 100%;
-		}
-		.topMesg {
-			height: 29px;
-			overflow: hidden;
-			background: #212121;
-			border-bottom: 1px solid #3a3a3a;
-			color: $colorWhite;
 
-			.contPdg {
-				width: $mainColWidth;
-				margin: 0 auto;
-				line-height: 29px;
-				text-align: center;
-			}
-			h2 {
-				margin: 0;
-				font-weight: normal;
-				font-family: arial,helvatica,sans-serif;
-				font-size: 14px;
 
-				strong {
-					font-weight: bold;
-				}
-			}
-			.warn_yellow { color: #fff348; }
-			.warn_red { color: #d10000; }
-		}
-
-		h1 {
-			color: $colorBlack;
-			font-family: 'MyriadProRegular',serif;
-		}
+.wrapper {
+	width: 100%;
+	overflow: hidden;
 }
+.mainColumn {
+	overflow: hidden;
+	margin: 0 auto;
+}
+.topMesg {
+    height: 29px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+    margin: 0 auto;
+    background: #212121;
+    border-bottom: 1px solid #3a3a3a;
+    color: #fff;
+    z-index: 100;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+
+	.contPdg {
+		width: $mainColwidth;
+		margin: 0 auto;
+		line-height: 29px;
+		text-align: center;
+	}
+	h2 {
+		margin: 0;
+		font-weight: normal;
+		font-family: arial,helvatica,sans-serif;
+		font-size: 14px;
+		letter-spacing: .5px;
+
+		strong {
+			font-weight: bold;
+		}
+	}
+	.warn_yellow { color: #fff348; }
+	.warn_red { color: #d10000; }
+}
+
+h1 {
+	color: $colorBlack;
+	font-family: 'MyriadProRegular',serif;
+}
+
 .section {
+
+	position: relative;
+
 	.contPdg {
 
 		.col {
@@ -93,6 +115,7 @@ html {
 		min-height: 200px;
 		float: left;
 		width: 770px;
+		margin-top: 30px;
 
 		&.col2 {
 			width: 315px;
@@ -111,24 +134,41 @@ html {
 }
 .section1 {
 	min-height: 516px;
+	width: $mainColwidth;
+	margin: 0 auto;
+	position: relative;
 
 		.contPdg {
-			width: $mainColWidth;
+			width: $mainColwidth;
 			margin: 0 auto;
 			border-left: 1px solid #222;
 			border-right: 1px solid #222;	
 		}
 		#photoMain {
 			float: left;
-			margin-left: -15px;
 		}	
 }
+.bgMain {
+    position: absolute;
+    top: 2px;
+    left: -607px;
+}
+.socialIconsLeft {
+    position: absolute;
+    left: -442px;
+    top: 47px;
+}
+.socialIconsRight {
+	position: absolute;
+    right: -560px;
+    top: 47px;
+}
 .section2 {
-	min-height: 900px;
-	background: url('/images/bg_section2_top.png') no-repeat top center;	
+	min-height: 1200px;
+	background: url('/images/bg_section2_top.png') no-repeat center 184px;	
 
 		.contPdg {
-			width: $mainColWidth;
+			width: $mainColwidth;
 			margin: 0 auto;
 			border-left: 1px solid #222;
 			border-right: 1px solid #222;	
@@ -137,16 +177,21 @@ html {
 }
 #photoMain {
 	float: left;
+	margin-left: 10px;
 }
 .blurb {
 	
 	&.mainPromo {
-	    margin: 26px 15px 0 0;
-	    font-family: 'Bodoni Book';
+	    margin: 15px 0 0 0;
+	    font-family: 'Bodoni Condensed',sans-serif;
 	    font-weight: normal;
-	    font-size: 46px;
-	    line-height: 52px;
+	    font-size: 67px;
+	    line-height: 59px;
 	    text-align: center;
-	    letter-spacing: -0.75px;
+	    letter-spacing: -1px;
+	    position: absolute;
+	    width: 440px;
+	    height: 180px;
+	    right: -12px;
 	}
 }
