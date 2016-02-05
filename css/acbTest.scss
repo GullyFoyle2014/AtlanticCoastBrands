@@ -141,10 +141,12 @@ html {
 .blurb {
 	
 	&.mainPromo {
-		font-family: 'Bodoni Book';
-	    font-size: 38px;
-	    line-height: 39px;
-	    margin: 0;
+	    margin: 26px 15px 0 0;
+	    font-family: 'Bodoni Book';
+	    font-weight: normal;
+	    font-size: 46px;
+	    line-height: 52px;
 	    text-align: center;
+	    letter-spacing: -0.75px;
 	}
 }
