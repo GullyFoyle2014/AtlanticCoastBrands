@@ -76,6 +76,27 @@ html h1 {
   font-family: 'MyriadProRegular',serif;
 }
 
+.section .contPdg .col {
+  position: relative;
+}
+.section .cols2 {
+  min-height: 200px;
+  float: left;
+  width: 770px;
+}
+.section .cols2.col2 {
+  width: 315px;
+}
+.section .cols3 {
+  min-height: 200px;
+  float: left;
+  width: 33%;
+}
+.section .cols3.capStone {
+  float: none;
+  width: 100%;
+}
+
 .section1 {
   min-height: 516px;
 }
@@ -84,6 +105,10 @@ html h1 {
   margin: 0 auto;
   border-left: 1px solid #222;
   border-right: 1px solid #222;
+}
+.section1 #photoMain {
+  float: left;
+  margin-left: -15px;
 }
 
 .section2 {
@@ -95,6 +120,18 @@ html h1 {
   margin: 0 auto;
   border-left: 1px solid #222;
   border-right: 1px solid #222;
+}
+
+#photoMain {
+  float: left;
+}
+
+.blurb.mainPromo {
+  font-family: 'Bodoni Book';
+  font-size: 38px;
+  line-height: 39px;
+  margin: 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=acbTest.css.map */
