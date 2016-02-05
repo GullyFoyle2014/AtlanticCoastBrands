@@ -37,12 +37,64 @@ font-family:'MyriadProRegular';
 /* Variables */
 /* globals */
 /* Structure */
-body {
-  background: #f00;
+html {
+  background: #fff url("/images/bg_main_top_icons.png") no-repeat top center;
 }
-body h1 {
+html .wrapper {
+  width: 100%;
+}
+html .topMesg {
+  height: 29px;
+  overflow: hidden;
+  background: #212121;
+  border-bottom: 1px solid #3a3a3a;
   color: #fff;
+}
+html .topMesg .contPdg {
+  width: 1085px;
+  margin: 0 auto;
+  line-height: 29px;
+  text-align: center;
+}
+html .topMesg h2 {
+  margin: 0;
+  font-weight: normal;
+  font-family: arial,helvatica,sans-serif;
+  font-size: 14px;
+}
+html .topMesg h2 strong {
+  font-weight: bold;
+}
+html .topMesg .warn_yellow {
+  color: #fff348;
+}
+html .topMesg .warn_red {
+  color: #d10000;
+}
+html h1 {
+  color: #000;
   font-family: 'MyriadProRegular',serif;
+}
+
+.section1 {
+  min-height: 516px;
+}
+.section1 .contPdg {
+  width: 1085px;
+  margin: 0 auto;
+  border-left: 1px solid #222;
+  border-right: 1px solid #222;
+}
+
+.section2 {
+  min-height: 900px;
+  background: url("/images/bg_section2_top.png") no-repeat top center;
+}
+.section2 .contPdg {
+  width: 1085px;
+  margin: 0 auto;
+  border-left: 1px solid #222;
+  border-right: 1px solid #222;
 }
 
 /*# sourceMappingURL=acbTest.css.map */
