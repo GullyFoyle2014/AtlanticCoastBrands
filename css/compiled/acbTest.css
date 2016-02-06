@@ -112,12 +112,12 @@ h1 {
 }
 .section .cols2 {
   float: left;
-  width: 770px;
+  width: 765px;
   margin-top: 30px;
   height: 1200px;
 }
 .section .cols2.col2 {
-  width: 315px;
+  width: 320px;
 }
 .section .cols3 {
   min-height: 200px;
@@ -141,6 +141,106 @@ h1 {
   border-left: 1px solid #222;
   border-right: 1px solid #222;
 }
+.section1 .topBottle {
+  margin-top: 15px;
+}
+.section1 .topBottle .bottle {
+  display: block;
+  height: 170px;
+  width: 262px;
+  margin: 0 auto;
+  z-index: 5;
+}
+.section1 .topBottle .flare {
+  display: inline-block;
+  display: none;
+  height: 252px;
+  width: 252px;
+  z-index: 6;
+  position: absolute;
+  top: -59px;
+  right: -85px;
+  background: url("/images/bottle_flare_1.png") no-repeat left top;
+}
+.section1 .logos_rightColbot {
+  position: absolute;
+  top: 950px;
+  z-index: 5;
+  left: 36px;
+}
+.section1 .formCapture {
+  position: absolute;
+  top: 194px;
+  right: -34px;
+  z-index: 5;
+}
+.section1 .formCapture .formContainer {
+  display: inline-block;
+  position: relative;
+  width: 424px;
+  height: 750px;
+  background: url("/images/bg_rushTrial_form.png") no-repeat left top;
+}
+.section1 .formCapture .formContainer #captureForm {
+  width: 282px;
+  margin: 164px 0 8px 108px;
+}
+.section1 .formCapture .formContainer #captureForm .text-input {
+  width: 280px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 0 8px;
+  padding: 0;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  text-indent: 10px;
+  font-family: arial,sans-serif;
+  font-size: 12px;
+  color: #525252;
+}
+.section1 .formCapture .formContainer #captureForm .text-input.city {
+  width: 128px;
+}
+.section1 .formCapture .formContainer #captureForm .text-input.state {
+  width: 92px;
+}
+.section1 .formCapture .formContainer #captureForm .text-input.zip {
+  width: 47px;
+}
+.section1 .formCapture .formContainer .shipDate {
+  font-family: arial,sans-serif;
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  position: absolute;
+  top: 128px;
+  right: 47px;
+}
+.section1 .formCapture .formContainer .legalease {
+  float: right;
+  margin-right: 59px;
+  line-height: 18px;
+  font-family: arial,sans-serif;
+  font-size: 12px;
+  padding-left: 20px;
+  background: url("/images/icon-form-lock.png") no-repeat left;
+  color: #fff;
+}
+.section1 .formCapture .formContainer #arrowSide {
+  position: absolute;
+  bottom: 151px;
+  right: -90px;
+  background: url("/images/arrow_side_big.png") no-repeat left top;
+  height: 0;
+  width: 136px;
+  padding-top: 187px;
+  overflow: hidden;
+}
+.section1 .formCapture .formContainer #cta_button {
+  float: right;
+  margin: 16px 29px 0 0;
+}
 .section1 #photoMain {
   float: left;
   height: 666px;
@@ -163,8 +263,8 @@ h1 {
   overflow: hidden;
   position: absolute;
   top: 668px;
-  left: -20px;
-  z-index: 3;
+  left: -7px;
+  z-index: 6;
 }
 
 .bgMain {
@@ -186,19 +286,61 @@ h1 {
 }
 
 .section2 {
-  min-height: 1200px;
+  min-height: 940px;
   background: url("/images/bg_section2_top.png") no-repeat center -14px;
+  /* end contPdg */
 }
 .section2 .contPdg {
   width: 1085px;
   margin: 0 auto;
-  border-left: 1px solid #222;
-  border-right: 1px solid #222;
+  /* end col */
+}
+.section2 .contPdg .col {
+  position: absolute;
+  bottom: 26px;
+  width: 1050px;
+  padding-left: 25px;
+}
+.section2 .contPdg .col .col3 .logo {
+  height: 0;
+  width: 133px;
+  padding-top: 67px;
+  background: url("/images/logo_ender_gma.png") no-repeat left top;
+}
+.section2 .contPdg .col .col2 .logo {
+  width: 138px;
+  height: 0;
+  padding-top: 78px;
+  background: url("/images/logo_ender_vieira.png") no-repeat left top;
+}
+.section2 .contPdg .col .col1 .logo {
+  width: 118px;
+  height: 0;
+  padding-top: 78px;
+  background: url("/images/logo_ender_view.png") no-repeat left top;
+}
+.section2 .contPdg .logo {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.section2 .contPdg .text {
+  display: inline-block;
+  padding: 10px 12px 0;
+  font-family: 'Bodoni',serif;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: -.5px;
 }
 
+/* end section 2 */
 .blurb {
   text-align: center;
   letter-spacing: -1px;
+}
+.blurb .sup {
+  font-size: 16px;
+  vertical-align: super;
 }
 .blurb.mainPromo {
   margin: 18px 0 0 0;
@@ -213,17 +355,14 @@ h1 {
 .blurb.secondHdr {
   position: absolute;
   width: 392px;
-  right: 0px;
+  right: 3px;
   margin: 22px 0 0 0;
   top: 205px;
   font-family: 'Bodoni Condensed','Bodoni Book','Bodoni',serif;
   font-weight: normal;
   font-size: 49px;
   line-height: 50px;
-}
-.blurb.secondHdr .sup {
-  font-size: 16px;
-  vertical-align: super;
+  letter-spacing: -1px;
 }
 .blurb.signature {
   position: absolute;
@@ -247,6 +386,19 @@ h1 {
   background: url("/images/bg_christie_sig.png") no-repeat left top;
   margin: 0 0 -13px 6px;
 }
+.blurb.lastHdr {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-family: 'Bodoni',serif;
+  font-weight: normal;
+  font-size: 62px;
+  line-height: 70px;
+  letter-spacing: -2px;
+}
+.blurb.lastHdr .sup {
+  font-size: 30px;
+}
 
 .iconsMiddle {
   height: 0;
@@ -257,7 +409,7 @@ h1 {
   padding-top: 98px;
   position: absolute;
   top: 135px;
-  right: 15px;
+  right: 21px;
 }
 
 .featureList {
@@ -305,27 +457,34 @@ h1 {
 }
 
 #redCarpetBlock {
-  overflow: hidden;
   position: absolute;
-  top: 820px;
+  top: 807px;
+  left: -39px;
   z-index: 4;
+  -webkit-box-shadow: 6px 34px 54px -42px rgba(88, 94, 75, 0.96);
+  -moz-box-shadow: 6px 34px 54px -42px rgba(88, 94, 75, 0.96);
+  box-shadow: 6px 34px 54px -42px rgba(88, 94, 75, 0.96);
 }
 
 .redCarpet {
-  overflow: hidden;
+  width: 760px;
 }
 .redCarpet .redCarpetPics {
   float: left;
+  display: inline-block;
   overflow: hidden;
   width: 416px;
   height: 274px;
+  margin-bottom: -29px;
   background: url("/images/redcarpet_pic.png");
 }
 .redCarpet ul {
   overflow: hidden;
-  margin: 49px 0 0;
+  margin: 49px 0 0 -10px;
   padding: 0;
   list-style: none;
+  float: right;
+  width: 352px;
 }
 .redCarpet ul li {
   overflow: hidden;
@@ -345,12 +504,18 @@ h1 {
 .redCarpet ul .elle .logo {
   float: left;
   display: inline-block;
-  width: 73px;
+  width: 25%;
   height: 0;
-  margin-right: 20px;
+  margin: 4px 0 0 0;
   padding-top: 30px;
   overflow: hidden;
   background: url("/images/logo_redcarpet_elle.png") no-repeat left top;
+}
+.redCarpet ul .elle .rcSlug {
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+  width: 75%;
 }
 .redCarpet ul .us {
   margin-bottom: 20px;
@@ -358,22 +523,32 @@ h1 {
 .redCarpet ul .us .logo {
   float: left;
   display: inline-block;
-  width: 63px;
+  width: 25%;
   height: 0;
-  margin-right: 23px;
   padding-top: 57px;
   overflow: hidden;
   background: url("/images/logo_redcarpet_us.png") no-repeat left top;
 }
+.redCarpet ul .us .rcSlug {
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+  width: 75%;
+}
 .redCarpet ul .instyle .logo {
   float: left;
   display: inline-block;
-  width: 80px;
+  width: 25%;
   height: 0;
-  margin-right: 13px;
   padding-top: 23px;
   overflow: hidden;
   background: url("/images/logo_redcarpet_instyle.png") no-repeat left top;
+}
+.redCarpet ul .instyle .rcSlug {
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+  width: 75%;
 }
 
 /*# sourceMappingURL=acbTest.css.map */
