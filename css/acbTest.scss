@@ -320,6 +320,8 @@ h1 {
     z-index: 4;
 }
 .redCarpet {
+	overflow: hidden;
+
 	.redCarpetPics {
 		float: left;
 		overflow: hidden;
@@ -329,38 +331,63 @@ h1 {
 	}
 	
 	ul {
-		margin: 0;
+		overflow: hidden;
+		margin: 49px 0 0;
 		padding: 0;
 		list-style: none;
 
+		li {
+			overflow: hidden;
+			clear: both;
+			font-family: 'MyriadProLight', sans-serif;
+			font-size: 17px;
+
+			strong {
+				font-family: 'MyriadProRegular', sans-serif;
+			}
+			.sub {
+				font-size: 11px;
+			}
+		}
+
 		.elle {
+			margin-bottom: 23px;
+
 			.logo {
+				float: left;
 				display: inline-block;
 				width: 73px;
 				height: 0;
+				margin-right: 20px;
 				padding-top: 30px;
 				overflow: hidden;
-				background: url('/images/logo_redcarpet_elle.png');
+				background: url('/images/logo_redcarpet_elle.png') no-repeat left top;
 			}
 		}
 		.us {
+			margin-bottom: 20px;
+
 			.logo {
+				float: left;
 				display: inline-block;
 				width: 63px;
 				height: 0;
+				margin-right: 23px;
 				padding-top: 57px;
 				overflow: hidden;
-				background: url('/images/logo_redcarpet_us.png');
+				background: url('/images/logo_redcarpet_us.png') no-repeat left top;
 			}
 		}
 		.instyle {
 			.logo {
+				float: left;
 				display: inline-block;
 				width: 80px;
 				height: 0;
+				margin-right: 13px;
 				padding-top: 23px;
 				overflow: hidden;
-				background: url('/images/logo_redcarpet_instyle.png');
+				background: url('/images/logo_redcarpet_instyle.png') no-repeat left top;
 			}
 		}
 	}
