@@ -9,10 +9,11 @@
 font-family: 'Bodoni Book';
 font-family: 'Bodoni Bold';
 font-family: 'Bodoni';
-font-family:'MyriadProSemibold';
-font-family:'MyriadProLight';
-font-family:'MyriadProRegular';
+font-family: 'MyriadProSemibold';
+font-family: 'MyriadProLight';
+font-family: 'MyriadProRegular';
 font-family: 'Bodoni Condensed'; (ttf only)
+font-family: 'PT Sans Narrow', sans-serif;
 */
 @font-face {
   font-family: 'MyriadProSemibold';
@@ -110,10 +111,10 @@ h1 {
   position: relative;
 }
 .section .cols2 {
-  min-height: 200px;
   float: left;
   width: 770px;
   margin-top: 30px;
+  height: 1200px;
 }
 .section .cols2.col2 {
   width: 315px;
@@ -129,7 +130,7 @@ h1 {
 }
 
 .section1 {
-  min-height: 516px;
+  min-height: 615px;
   width: 1085px;
   margin: 0 auto;
   position: relative;
@@ -142,6 +143,28 @@ h1 {
 }
 .section1 #photoMain {
   float: left;
+  height: 666px;
+  width: 361px;
+  margin-left: 10px;
+}
+.section1 #photoMain:after {
+  content: 'Christie Brinkley, Age 61 - Supermodel, Actress, Author';
+  display: block;
+  color: #666;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 15px;
+  margin-top: -5px;
+  text-align: center;
+}
+.section1 #arrowMainCenter {
+  width: 786px;
+  height: 109px;
+  margin-top: 32px;
+  overflow: hidden;
+  position: absolute;
+  top: 668px;
+  left: -20px;
+  z-index: 3;
 }
 
 .bgMain {
@@ -164,7 +187,7 @@ h1 {
 
 .section2 {
   min-height: 1200px;
-  background: url("/images/bg_section2_top.png") no-repeat center 184px;
+  background: url("/images/bg_section2_top.png") no-repeat center -14px;
 }
 .section2 .contPdg {
   width: 1085px;
@@ -173,19 +196,16 @@ h1 {
   border-right: 1px solid #222;
 }
 
-#photoMain {
-  float: left;
-  margin-left: 10px;
+.blurb {
+  text-align: center;
+  letter-spacing: -1px;
 }
-
 .blurb.mainPromo {
   margin: 18px 0 0 0;
   font-family: 'Bodoni Condensed','Bodoni Book','Bodoni',serif;
   font-weight: normal;
   font-size: 67px;
   line-height: 59px;
-  text-align: center;
-  letter-spacing: -1px;
   position: absolute;
   width: 440px;
   right: -12px;
@@ -194,18 +214,38 @@ h1 {
   position: absolute;
   width: 392px;
   right: 0px;
-  margin: 23px 0 0 0;
-  top: 210px;
+  margin: 22px 0 0 0;
+  top: 205px;
   font-family: 'Bodoni Condensed','Bodoni Book','Bodoni',serif;
   font-weight: normal;
   font-size: 49px;
   line-height: 50px;
-  text-align: center;
-  letter-spacing: -1px;
 }
 .blurb.secondHdr .sup {
   font-size: 16px;
   vertical-align: super;
+}
+.blurb.signature {
+  position: absolute;
+  width: 395px;
+  right: 0;
+  margin: 14px 0 0 0;
+  top: 608px;
+  font-family: 'Bodoni',serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 30px;
+  text-align: left;
+}
+.blurb.signature .sig {
+  display: inline-block;
+  overflow: hidden;
+  width: 189px;
+  height: 0;
+  padding-top: 39px;
+  background: url("/images/bg_christie_sig.png") no-repeat left top;
+  margin: 0 0 -13px 6px;
 }
 
 .iconsMiddle {
@@ -223,9 +263,9 @@ h1 {
 .featureList {
   overflow: hidden;
   position: absolute;
-  top: 334px;
+  top: 330px;
   right: 5px;
-  margin: 23px 0 0 0;
+  margin: 14px 0 0 0;
   padding: 0;
   list-style: none;
   letter-spacing: 1px;
@@ -247,9 +287,9 @@ h1 {
   height: 0;
   padding-top: 132px;
   width: 379px;
-  margin-top: 30px;
+  margin-top: 28px;
   position: absolute;
-  top: 467px;
+  top: 445px;
   right: 15px;
   background: url("/images/bg_beforeafter_pic.png") no-repeat left top;
 }
@@ -262,6 +302,50 @@ h1 {
   font-family: "MyriadProLight";
   margin-top: -3px;
   margin-right: 22px;
+}
+
+#redCarpetBlock {
+  overflow: hidden;
+  position: absolute;
+  top: 820px;
+  z-index: 4;
+}
+
+.redCarpet .redCarpetPics {
+  float: left;
+  overflow: hidden;
+  width: 416px;
+  height: 274px;
+  background: url("/images/redcarpet_pic.png");
+}
+.redCarpet ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.redCarpet ul .elle .logo {
+  display: inline-block;
+  width: 73px;
+  height: 0;
+  padding-top: 30px;
+  overflow: hidden;
+  background: url("/images/logo_redcarpet_elle.png");
+}
+.redCarpet ul .us .logo {
+  display: inline-block;
+  width: 63px;
+  height: 0;
+  padding-top: 57px;
+  overflow: hidden;
+  background: url("/images/logo_redcarpet_us.png");
+}
+.redCarpet ul .instyle .logo {
+  display: inline-block;
+  width: 80px;
+  height: 0;
+  padding-top: 23px;
+  overflow: hidden;
+  background: url("/images/logo_redcarpet_instyle.png");
 }
 
 /*# sourceMappingURL=acbTest.css.map */
