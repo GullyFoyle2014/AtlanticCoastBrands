@@ -42,6 +42,13 @@ font-family: 'Bodoni Condensed'; (ttf only)
 }
 /* Variables */
 /* globals */
+.checkmark {
+  display: inline-block;
+  background: url("/images/icon-checkmark.png") no-repeat left top;
+  height: 23px;
+  width: 21px;
+}
+
 /* Structure */
 .wrapper {
   width: 100%;
@@ -146,7 +153,7 @@ h1 {
 .socialIconsLeft {
   position: absolute;
   left: -442px;
-  top: 47px;
+  top: 51px;
 }
 
 .socialIconsRight {
@@ -172,8 +179,8 @@ h1 {
 }
 
 .blurb.mainPromo {
-  margin: 15px 0 0 0;
-  font-family: 'Bodoni Condensed',sans-serif;
+  margin: 18px 0 0 0;
+  font-family: 'Bodoni Condensed','Bodoni Book','Bodoni',serif;
   font-weight: normal;
   font-size: 67px;
   line-height: 59px;
@@ -181,8 +188,80 @@ h1 {
   letter-spacing: -1px;
   position: absolute;
   width: 440px;
-  height: 180px;
   right: -12px;
+}
+.blurb.secondHdr {
+  position: absolute;
+  width: 392px;
+  right: 0px;
+  margin: 23px 0 0 0;
+  top: 210px;
+  font-family: 'Bodoni Condensed','Bodoni Book','Bodoni',serif;
+  font-weight: normal;
+  font-size: 49px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.blurb.secondHdr .sup {
+  font-size: 16px;
+  vertical-align: super;
+}
+
+.iconsMiddle {
+  height: 0;
+  width: 415px;
+  overflow: hidden;
+  background: url("/images/bg_section1_col2_socialicons.png");
+  margin-right: -21px;
+  padding-top: 98px;
+  position: absolute;
+  top: 135px;
+  right: 15px;
+}
+
+.featureList {
+  overflow: hidden;
+  position: absolute;
+  top: 334px;
+  right: 5px;
+  margin: 23px 0 0 0;
+  padding: 0;
+  list-style: none;
+  letter-spacing: 1px;
+}
+
+.featureItem {
+  font-family: 'MyriadProLight','MyriadProRegular',sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+  color: #000;
+  list-style: none;
+}
+.featureItem .checkmark {
+  float: left;
+  margin: 3px 5px 0 24px;
+}
+
+.beforeAfter {
+  height: 0;
+  padding-top: 132px;
+  width: 379px;
+  margin-top: 30px;
+  position: absolute;
+  top: 467px;
+  right: 15px;
+  background: url("/images/bg_beforeafter_pic.png") no-repeat left top;
+}
+.beforeAfter:after {
+  content: 'Susan, NY';
+  display: block;
+  text-align: right;
+  color: #000;
+  font-size: 14px;
+  font-family: "MyriadProLight";
+  margin-top: -3px;
+  margin-right: 22px;
 }
 
 /*# sourceMappingURL=acbTest.css.map */
