@@ -18,9 +18,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="canonical" href="http://atlanticcoastbrands.com" /><!-- would be the real canonicle url for SEO purposes -->
 <meta name="Description" content="Atlantic Coast Brands coding test" />
-<meta name="Keywords" content="Atlantic Coast Brands, coding test, Alex Morse, front-end web developer, production, e-commerce" />
-<meta name="robots" content="index, follow" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="Keywords" content="Atlantic Coast Brands, coding test, Alex Morse, front-end web developer, production, promotions, e-commerce" />
+<meta name="robots" content="nofollow">
+
 
 <title>Atlatic Coast Brands - Coding Test - Alex Morse</title>
 
@@ -29,7 +29,7 @@
 <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
 <script src="bower_components/jquery.countdown/dist/jquery.countdown.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
 <script src="js/concat/acbTest_cat.js" type="text/javascript"></script>
 
 
@@ -47,14 +47,17 @@
         <div class="mainColumn">
         
           <section class="section section1">
+              <!-- Using abs positioning divs to fake bg images, this is more reliable centering and the bg image wont scale with the viewport.   Since this is a desktop based site and no responsiveness built in, it is designed to display in a wide desktop screen.  Main textured and fixed-center BG image as well as Brand/Icon ribbons to left and right sides top. -->
               <img src="/images/bg_mainbackground.png" class="bgMain" />
               <img src="/images/bg_socialicons_topLeft.png" class="socialIconsLeft">
               <img src="/images/bg_socialicons_topRight.png" class="socialIconsRight">
               
               <div class="contPdg">
+
                   <div class="col cols2 col1 cleanUls">
                       <div id="photoMain"><img src="/images/big_christie_pic.png" alt="Christie Brinkley - Recapture-360 + IR Defense"/></div>
-                      <div id="arrowMainCenter"><a href="#"><img src="/images/arrow_main_center.png" alt="Get Your Exclusive Risk Free Trial! - 100% Free Mystery Gift - HURRY While Supplies Last..." /></a></div>
+                      <div id="arrowMainCenter"><img src="/images/arrow_main_center.png" alt="Get Your Exclusive Risk Free Trial! - 100% Free Mystery Gift - HURRY While Supplies Last..." /></div>
+
                       <div id="redCarpetBlock">
                           <div class="redCarpet">
                               <div class="redCarpetPics"></div>
@@ -63,23 +66,27 @@
                                 
                                 <li class="second us"><span class="logo">Us Magazine</span><span class="rcSlug">&ldquo;Christie Brinkley looks impossibly <strong>amazing</strong> at age 61...&rdquo;<sub class="sub"> - US Weekly Magazine</sub></span></li>
                                 
-                                <li class="third instyle"><span class="logo">InStyle</span><span class="rcSlug">&ldquo;Getting Christie Brinkley's <strong>perfect skin</strong> just got a lot easier...&rdquo;<sub class="sub"> - InStyle Magazine</sub></span></li>
+                                <li class="third instyle"><span class="logo">InStyle</span><span class="rcSlug">&ldquo;Getting Christie Brinkley&rsquo;s <strong>perfect skin</strong> just got a lot easier...&rdquo;<sub class="sub"> - InStyle Magazine</sub></span></li>
                               </ul>
                           </div>
                       </div>
-                      <h2 class="blurb mainPromo">Christie's Age Defying Secret to Youthful Skin!</h2>
+
+                      <h2 class="blurb mainPromo">Christie&rsquo;s Age Defying Secret to Youthful Skin!</h2>
+                      
                       <div class="iconsMiddle">As Featured In: The View, The Doctors, Allure, ABC, The Meridith Vieira Show</div>
-                      <h2 class="blurb secondHdr"><span>Christie Brinkley’s</span> NEW Recapture-360<span class="sup">&reg;</span> Day Treatment</h2>
+                      
+                      <h2 class="blurb secondHdr"><span>Christie Brinkley&rsquo;s</span> NEW Recapture-360<span class="sup">&reg;</span> Day Treatment</h2>
+                      
                       <ul class="featureList">
                           <li class="featureItem"><span class="checkmark"></span>Visibly Reduce &amp; Prevent Wrinkles</li>
                           <li class="featureItem"><span class="checkmark"></span>Helps Visibly Fade Sun Damage</li>
                           <li class="featureItem"><span class="checkmark"></span>Restore, Revive &amp; Protects Skin</li>
                       </ul>
+
                       <div class="beforeAfter">
-                      </div>
-                      <h2 class="blurb signature">&ldquo;I guarantee you will be absolutely amazed&rdquo;<span class="sig"> - Christie Brinkley</span></h2>
-
-
+                      </div><!-- example image replacement via background -->
+                      
+                      <h2 class="blurb signature">&ldquo;I guarantee you will be absolutely amazed&rdquo;<span class="sig"> - Christie Brinkley</span></h2><!-- image replacement, with text still in the element for better SEO/Accesibility -->
 
                   </div><!-- end col cols2 col1 -->
 
@@ -87,8 +94,9 @@
 
                       <div class="topBottle">
                             <div class="bottle"><img src="/images/bottle_top.png" /></div>
-                            <span class="flare"></span>
+                            <span id="flare" class="flare"></span><!-- Note: this flare is a replacement, I was having pshop rendering issues and the lenseflare from the PSD was not rendering cleanly, I generated a different one that is trying to match as best as it can, any difference is due to this Photoshop issue. Screen mode -->
                       </div>
+                      
                       <div class="formCapture">
                             <div class="formContainer">
                                 <span class="shipDate"><strong>Estimated Ship Date</strong>: August 4, 2016</span>
@@ -106,36 +114,39 @@
                                     <input type="text" class="text-input phone" placeholder="Phone" />
                                     <input type="text" class="text-input email" placeholder="Email" />
                                 </form>
+
                                 <span class="legalease">256-bit Secure Sockets Layer Encryption</span>
+
                                 <div id="cta_button">
                                       <a href="#"><img src="/images/button_rushmytrial_cta.png" class="thebutton" /></a>
                                 </div>
-                                <div id="arrowSide"></div>
+
+                                <div id="arrowSide"></div><!-- image replacement, could do the image inline as well. -->
+
                                 <div class="form_verified">
                                   <ul>
                                     <li class="left"><a href="#"><img src="/images/logo_godaddysecured.png" alt="Sectured by Go Daddy.com" /></a></li>
                                     <li class="right"><a href="#"><img src="/images/logo_godaddyverified.png" alt="Verified by Go Daddy.com" /></a></li>
                                   </ul>
                                 </div>
+
                                 <div class="tosPrivacy">
                                   <span>*<a href="#">Privacy Policy</a> &amp; <a href="#">Offer Terms</a></span>
                                 </div>
 
                             </div>
-
-
                       </div>
 
                       <div class="logos_rightColbot">
-                        <img src="/images/logos-ender-rcol.png" />
+                          <img src="/images/logos-ender-rcol.png" />
                       </div>
 
-
                   </div>
-              </div>  
-          </section>
+              </div><!-- end contPdg -->
+          </section><!-- end section1 -->
           <section class="section section2">
               <div class="contPdg">
+
                   <div class="col">
                       <div class="cols3 capStone"><h2 class="blurb lastHdr">Christie Brinkley, Age 61, Reveals
     Recapture-360<span class="sup">&copy;</span> to Millions on Live TV!</h2></div>
@@ -144,14 +155,12 @@
                       <div class="cols3 col2"><span class="logo"></span><span class="text">Meredith Vieira and Christie Discuss Beauty Secrets and Beauty Tips!</span></div>
                       <div class="cols3 col3"><span class="logo"></span><span class="text">Good Morning America Declares: Christie Brinkley Still Sexy at Her Age!</span></div>
                   </div><!-- end col -->
+              
               </div><!-- end contPdg -->  
           </section>
 
         </div><!-- end mainColumn -->
-
-
     </div> <!-- end wrapper -->
-
 
 </body>
 </html>

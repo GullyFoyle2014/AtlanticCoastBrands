@@ -97,6 +97,14 @@ $mainColwidth: 1085px;
 
 		.countdown {
 			display: inline-block;
+
+			&.disabled {
+			    color: #f00;
+			    z-index: 6;
+			    position: absolute;
+			    font-weight: bold;
+			    padding-left: 5px;
+			}
 		}
 		strong {
 			font-weight: bold;
@@ -167,14 +175,13 @@ h1 {
 			}
 			.flare {
 			    display: inline-block;
-			    display: none;
-			    height: 252px;
-			    width: 252px;
-			    z-index: 6;
 			    position: absolute;
-			    top: -59px;
-			    right: -85px;
-			    background: url('/images/bottle_flare_1.png') no-repeat left top;
+			    top: -51px;
+			    right: -51px;
+			    height: 200px;
+			    width: 200px;
+			    z-index: 6;
+			    background: url("/images/lense-flare-bluer.png") no-repeat left top;
 			}
 		}
 		.logos_rightColbot {
@@ -192,13 +199,13 @@ h1 {
 			.formContainer {
 				display: inline-block;
 				position: relative;
-				width: 424px;
-				height: 750px;
-				background: url('/images/bg_rushTrial_form.png') no-repeat left top;
+				width: 400px;
+				height: 743px;
+				background: url('/images/bg_rushTrial_form_alt.png') no-repeat left top;
 
 				#captureForm {
 					width: 282px;
-    				margin: 164px 0 8px 108px;
+    				margin: 164px 0 8px 84px;
 
     				.text-input {
     					width: 280px;
@@ -427,7 +434,7 @@ h1 {
 	    top: 205px;
 	    font-family: 'Bodoni Condensed','Bodoni Book','Bodoni',serif;
 	    font-weight: normal;
-	    font-size: 49px;
+	    font-size: 48px;
 	    line-height: 50px;
 	    letter-spacing: -1px;
 	}
@@ -524,7 +531,7 @@ h1 {
 #redCarpetBlock {
     position: absolute;
     top: 807px;
-    left: -39px;
+    left: -37px;
     z-index: 4;
     -webkit-box-shadow: 6px 34px 54px -42px rgba(88,94,75,0.96);
     -moz-box-shadow: 6px 34px 54px -42px rgba(88,94,75,0.96);
