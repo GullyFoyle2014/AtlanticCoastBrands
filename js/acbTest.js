@@ -3,7 +3,6 @@ $( document ).ready(function() {
 
 	//submit the form on graphical button click, alternatives would be to re-do the form via the Submit button standard or a <button></button element.
 	$("#cta_button a").click(function(e){
-    	alert(true);
     	$("#captureForm").submit();
 	});
 
