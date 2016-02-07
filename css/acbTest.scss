@@ -55,10 +55,7 @@ $mainColwidth: 1085px;
 	width: 21px;
 }
 
-
 /* Structure */
-
-
 .wrapper {
 	width: 100%;
 	overflow: hidden;
@@ -68,15 +65,15 @@ $mainColwidth: 1085px;
 	margin: 0 auto;
 }
 .topMesg {
-    height: 29px;
-    width: 100%;
     overflow: hidden;
     position: absolute;
     z-index: 100;
+    height: 29px;
+    width: 100%;
     margin: 0 auto;
     background: #212121;
     border-bottom: 1px solid #3a3a3a;
-    color: #fff;
+    color: $colorWhite;
     z-index: 100;
     position: absolute;
     margin: 0 auto;
@@ -120,7 +117,6 @@ h1 {
 }
 
 .section {
-
 	position: relative;
 
 	.contPdg {
@@ -213,7 +209,7 @@ h1 {
     					line-height: 35px;
     					margin: 0 0 8px;
     					padding: 0;
-    					background: #fff;
+    					background: $colorWhite;
     					border: 1px solid #000;
     					border-radius: 4px;
     					text-indent: 10px;
@@ -225,12 +221,11 @@ h1 {
 						&.state { width: 92px; }
 						&.zip { width: 47px; }    
     				}
-
 				}
 				.shipDate {
 					font-family: arial,sans-serif;
 				    font-size: 15px;
-				    color: #fff;
+				    color: $colorWhite;
 				    display: block;
 				    position: absolute;
 				    top: 128px;
@@ -244,7 +239,7 @@ h1 {
 					font-size: 12px;
 					padding-left: 20px;
 					background: url('/images/icon-form-lock.png') no-repeat left;
-					color: #fff;
+					color: $colorWhite;
 				}
 				#arrowSide {
 					position: absolute;
@@ -285,13 +280,13 @@ h1 {
 				    font-size: 11px;
 
 					span {
-						color: #fff;
+						color: $colorWhite;
 					}
 					a {
 						font-family: arial,sans-serif;
 						font-size: 11px;
 						text-decoration: underline;
-						color: #fff;
+						color: $colorWhite;
 					}
 				}
 				#cta_button {

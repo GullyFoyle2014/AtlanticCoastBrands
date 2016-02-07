@@ -7,8 +7,8 @@ $( document ).ready(function() {
     	$("#captureForm").submit();
 	});
 
-	//Sets the Timer countdown to 2/9/2016, this coming tuesday.
-	//Uses the CountDown Jquery plugin, presents "expired" message after timer is done.
+	//Sets the Timer countdown to 2/10/2016, this coming tuesday/weds 12:00am.
+	//Uses the CountDown Jquery plugin, presents "offer expired" message after timer is done.
 	function countDown(){
 		$('#clock').countdown('2016/02/10 00:00:00')
 		 .on('update.countdown', function(event) {

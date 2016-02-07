@@ -16,10 +16,10 @@
 <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="canonical" href="http://atlanticcoastbrands.com" /><!-- would be the real canonicle url for SEO purposes -->
+<link rel="canonical" href="http://acb.solarcomputing.net" /><!-- would be the real canonicle url for SEO purposes -->
 <meta name="Description" content="Atlantic Coast Brands coding test" />
 <meta name="Keywords" content="Atlantic Coast Brands, coding test, Alex Morse, front-end web developer, production, promotions, e-commerce" />
-<meta name="robots" content="nofollow">
+<meta name="robots" content="noindex, nofollow">
 
 
 <title>Atlatic Coast Brands - Coding Test - Alex Morse</title>
@@ -58,6 +58,7 @@
                       <div id="photoMain"><img src="/images/big_christie_pic.png" alt="Christie Brinkley - Recapture-360 + IR Defense"/></div>
                       <div id="arrowMainCenter"><img src="/images/arrow_main_center.png" alt="Get Your Exclusive Risk Free Trial! - 100% Free Mystery Gift - HURRY While Supplies Last..." /></div>
 
+                      <!-- "Red Carpet" block, this uses CSS shadow for the block rather than trans PNG image shadow. This is a linear enough usage, other shadows were not great candidates for CSS shadows and so I used images. -->
                       <div id="redCarpetBlock">
                           <div class="redCarpet">
                               <div class="redCarpetPics"></div>
@@ -94,7 +95,7 @@
 
                       <div class="topBottle">
                             <div class="bottle"><img src="/images/bottle_top.png" /></div>
-                            <span id="flare" class="flare"></span><!-- Note: this flare is a replacement, I was having pshop rendering issues and the lenseflare from the PSD was not rendering cleanly, I generated a different one that is trying to match as best as it can, any difference is due to this Photoshop issue. Screen mode -->
+                            <span id="flare" class="flare"></span><!-- Note: I added Greensock animation to this flare, to demonstrate what I mentioned to you in the interview last week.   The central arrow-to-CTA also bloats a little on-load, as a highlight.  These are just demos for you since I mentioned it. -->
                       </div>
                       
                       <div class="formCapture">
@@ -116,7 +117,8 @@
                                 </form>
 
                                 <span class="legalease">256-bit Secure Sockets Layer Encryption</span>
-
+                                
+                                <!-- form submit triggered by button via Jquery -->
                                 <div id="cta_button">
                                       <a href="#"><img src="/images/button_rushmytrial_cta.png" class="thebutton" /></a>
                                 </div>
@@ -125,8 +127,9 @@
 
                                 <div class="form_verified">
                                   <ul>
-                                    <li class="left"><a href="#"><img src="/images/logo_godaddysecured.png" alt="Sectured by Go Daddy.com" /></a></li>
-                                    <li class="right"><a href="#"><img src="/images/logo_godaddyverified.png" alt="Verified by Go Daddy.com" /></a></li>
+                                    <!-- To demonstrate if there are linking-off components like this. -->
+                                    <li class="left"><a href="#"><img src="/images/logo_godaddysecured.png" alt="Sectured by Go Daddy.com" target="_new" /></a></li>
+                                    <li class="right"><a href="#"><img src="/images/logo_godaddyverified.png" alt="Verified by Go Daddy.com" target="_new" /></a></li>
                                   </ul>
                                 </div>
 
