@@ -89,6 +89,9 @@ font-family: 'PT Sans Narrow', sans-serif;
   font-size: 14px;
   letter-spacing: .5px;
 }
+.topMesg h2 .countdown {
+  display: inline-block;
+}
 .topMesg h2 strong {
   font-weight: bold;
 }
@@ -237,6 +240,40 @@ h1 {
   padding-top: 187px;
   overflow: hidden;
 }
+.section1 .formCapture .formContainer .form_verified {
+  position: absolute;
+  bottom: 76px;
+  right: 33px;
+}
+.section1 .formCapture .formContainer .form_verified ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.section1 .formCapture .formContainer .form_verified ul li {
+  float: left;
+}
+.section1 .formCapture .formContainer .form_verified ul li.right {
+  margin-top: 17px;
+}
+.section1 .formCapture .formContainer .form_verified ul li.left img {
+  margin-right: 15px;
+}
+.section1 .formCapture .formContainer .tosPrivacy {
+  position: absolute;
+  bottom: 56px;
+  right: 107px;
+  font-size: 11px;
+}
+.section1 .formCapture .formContainer .tosPrivacy span {
+  color: #fff;
+}
+.section1 .formCapture .formContainer .tosPrivacy a {
+  font-family: arial,sans-serif;
+  font-size: 11px;
+  text-decoration: underline;
+  color: #fff;
+}
 .section1 .formCapture .formContainer #cta_button {
   float: right;
   margin: 16px 29px 0 0;
@@ -281,7 +318,7 @@ h1 {
 
 .socialIconsRight {
   position: absolute;
-  right: -560px;
+  right: -550px;
   top: 47px;
 }
 
@@ -306,6 +343,9 @@ h1 {
   width: 133px;
   padding-top: 67px;
   background: url("/images/logo_ender_gma.png") no-repeat left top;
+}
+.section2 .contPdg .col .col3 .text {
+  padding-top: 21px;
 }
 .section2 .contPdg .col .col2 .logo {
   width: 138px;

@@ -95,6 +95,9 @@ $mainColwidth: 1085px;
 		font-size: 14px;
 		letter-spacing: .5px;
 
+		.countdown {
+			display: inline-block;
+		}
 		strong {
 			font-weight: bold;
 		}
@@ -246,6 +249,44 @@ h1 {
 					padding-top: 187px;
 					overflow: hidden;
 				}
+				.form_verified {
+				    position: absolute;
+				    bottom: 76px;
+				    right: 33px;
+
+					ul {
+						margin: 0;
+						padding: 0;
+						list-style: none;
+
+						li {
+							float: left;
+
+							&.right {
+								margin-top: 17px;
+							}
+							&.left {
+								img { margin-right: 15px; }
+							}
+						}
+					}
+				}
+				.tosPrivacy {
+				    position: absolute;
+				    bottom: 56px;
+				    right: 107px;
+				    font-size: 11px;
+
+					span {
+						color: #fff;
+					}
+					a {
+						font-family: arial,sans-serif;
+						font-size: 11px;
+						text-decoration: underline;
+						color: #fff;
+					}
+				}
 				#cta_button {
 					float: right;
     				margin: 16px 29px 0 0;
@@ -298,7 +339,7 @@ h1 {
 }
 .socialIconsRight {
 	position: absolute;
-    right: -560px;
+    right: -550px;
     top: 47px;
 }
 .section2 {
@@ -322,6 +363,7 @@ h1 {
 						padding-top: 67px;
 						background: url('/images/logo_ender_gma.png') no-repeat left top;
 					}
+					.text { padding-top: 21px; }
 				}
 				.col2 {
 					.logo {
